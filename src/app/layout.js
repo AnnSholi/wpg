@@ -1,7 +1,9 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Montserrat } from "next/font/google";
+import "./globals.scss";
+import { Header } from "@/layout/MainLayout/Header";
+import Footer from "@/layout/MainLayout/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const monserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={monserrat.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

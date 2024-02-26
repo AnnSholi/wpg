@@ -1,0 +1,28 @@
+.button {
+    align-items: center;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 16px 18px;
+
+    span {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    &.light {
+        background-color: var(--white);
+        border: 1px solid var(--white);
+        color: var(--dark-100);
+    }
+    &.contrast {
+        background-color: var(--primary);
+        color: var(--dark-100);
+    }
+    &.ghost {
+        background-color: transparent;
+        border: 1px solid;
+    }
+}

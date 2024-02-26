@@ -1,0 +1,38 @@
+.usage {
+    background-color: #F1EDEB;
+    .heading {
+        margin-bottom: 30px;
+        @media screen and (min-width: 768px){
+            margin-bottom: 80px;
+            width: 600px;
+        }
+    }
+    .items {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+
+        @media screen and (min-width: 768px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (min-width: 1024px){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .item {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 18px;
+            text-align: center;
+
+            .icon {
+                height: 30px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
