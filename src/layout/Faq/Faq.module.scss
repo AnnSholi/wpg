@@ -59,6 +59,7 @@
     }
 
     .answer {
+        color: var(--dark-100);
         max-height: 0;
         overflow: hidden;
         transition: max-height .4s ease-in-out;
