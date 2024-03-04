@@ -1,4 +1,5 @@
 .features {
+    background-color: var(--white);
     .heading {
         margin-bottom: 40px;
         span {
@@ -8,6 +9,9 @@
             font-weight: 600;
             margin-bottom: 16px;
             text-transform: uppercase;
+        }
+        h2 {
+            color: var(--dark-100);
         }
     }
     .comparison {
@@ -31,10 +35,12 @@
         }
 
         h3 {
+            color: var(--dark-100);
             margin-bottom: 20px;
         }
 
         span {
+            color: var(--dark-100);
             display: flex;
             font-size: 14px;
             font-weight: 400;
@@ -46,6 +52,7 @@
             margin-top: 30px;
             li {
                 align-items: center;
+                color: var(--dark-100);
                 display: flex;
                 list-style: none;
                 font-size: 16px;
@@ -78,10 +85,15 @@
             position: absolute;
             text-align: center;
             right: 0;
-            width: 60%;
+            width: 320px;
 
             @media (max-width: 1024px) {
                 bottom: -30px;
+            }
+
+            @media (max-width: 560px) {
+                font-size: 12px;
+                width: 200px;
             }
         }
     }
